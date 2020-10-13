@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>用GitHub和Hexo建立私人博客</title>
+    <link href="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="简言"><a href="#简言" class="headerlink" title="简言"></a>简言</h2><blockquote><p>Hexo是一个极速、简单且强大的静态博客架构。它使用 Node.js作为构建引擎，上百个文件在几秒钟内便可构建完成；而且拥有着丰富的插件库，因开源而显得生机勃勃，可扩展性很好；最重要的，它支持 Markdown 作为书写语言，极大地方便了博客的撰写。<br>==注意要规划好安装的目录，最好专门新建一个大的文件夹存放此次实践，这也是一个好的习惯！==</p></blockquote><h2 id="先展示一下效果图"><a href="#先展示一下效果图" class="headerlink" title="先展示一下效果图"></a>先展示一下效果图</h2><p><a href="https://blog.qltxy.cn/">逆鳞科技的部落阁</a></p><h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><p>首先，我们需要现安装一些软件来搭建博客环境。</p><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Node.js<a href="https://nodejs.org/zh-cn/">官网下载地址</a>，安装过程没什么可说的，一直点下一步即可。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo7.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo8.png"><br>安装完成了！<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo9.png"></p><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>Git<a href="https://git-scm.com/downloads">官网下载地址</a>，安装过程也是没有多少需要注意的，我们一路Next即可<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo10.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo11.png"><br>安装完成了！</p><h2 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub</h2><p>1.浏览器访问<a href="https://github.com/">GitHub官方网站</a><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo1.png"><br>进入官网页面之后，依次填写完成用户名、邮箱和密码信息后点击Sign up for Github。<br><strong>注意Username、Email和Pssword一定要记住，后边要多次使用，如果太长比较难记，建议记在记事本上。</strong><br>2.注册完登录之后，先选中Unlimited public repositories for free(默认是选中的)，再点击Continue即可。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo2.png"><br>接下来，直接点击skip this step<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo3.png"><br>3.然后如下图所示，先点击头像右边向下的小箭头，再选择Your profile。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo4.png"><br>然后先点击右上角的“+”，再点击New repository。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo5.png"><br>这时会验证你的邮箱，将收到的6位码填入，邮箱通过验证之后，这里需要就要输入新建仓库的信息<br>这里我们输入仓库名，它的写法是这样的,可不要任性去随意定义，就是username.github.io。这里我可吃了亏，否则是会失败的。其他的内容不需要操作，默认的public即可。</p><blockquote><p>例如：<br>username:WangGang-a1<br>对应的仓库名就是:WangGang-a1.github.io</p></blockquote><p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo6.png"><br>恭喜！您注册完成并创建了GitHub个人博客的仓库。</p><blockquote><p>关于Github的使用在这里咱们详细讲解了，如果有想要了解的可以自行百度相关教程<br>未完待续……</p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2020/10/06/hello-world/"/>
     <url>/2020/10/06/hello-world/</url>
