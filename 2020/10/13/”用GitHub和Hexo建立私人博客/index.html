@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="用GitHub和Hexo建立私人博客, 逆鳞科技的部落阁">
+    <meta name="keywords" content="用GitHub和Hexo建立个人博客, 逆鳞科技的部落阁">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>用GitHub和Hexo建立私人博客 | 逆鳞科技的部落阁</title>
+    <title>用GitHub和Hexo建立个人博客 | 逆鳞科技的部落阁</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -234,7 +234,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/WangGang-a1/Acer-A715-EFI" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -291,7 +291,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/WangGang-a1/Acer-A715-EFI" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">用GitHub和Hexo建立私人博客</h1>
+                    <h1 class="description center-align post-title">用GitHub和Hexo建立个人博客</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%BB%BA%E7%AB%99/">
+                                <span class="chip bg-color">建站</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%BB%BA%E7%AB%99/" class="post-category">
+                                建站
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -508,7 +529,7 @@
 <p><strong>输入cd ~/.ssh后，提示：No such file or directory， 说明第一次使用Git，对结果无影响。</strong><br><strong>代码说明：</strong><br><strong>cd ~/.ssh用来检查本机的ssh密钥，ssh-keygen -t rsa -C “Your Email Address”用于生成新的SSH Key。</strong><br>执行命令之后，会出现下面内容：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
 <p>出现该结果直接回车（也可以自定义key名称，一般默认就好）<br>会出现输入密码<br>Enter passphrase (empty for no passphrase):【输入加密串】【加密串我们看不见，你直接输入就好，输完密码回车键确定】<br>Enter same passphrase again:【再次输入加密串】<br>如果密码输入不一致，会提示再次输入：<br>Passphrases do not match. Try again.<br>这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。<br>如果出现下图的界面，就说明key生成成功。同时从Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.能看到ssh key保存的位置。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo14.png"></p>
-<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
+<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host <span class="string">&#x27;github.com (192.30.255.113)&#x27;</span> can<span class="string">&#x27;t be established.</span></span><br><span class="line"><span class="string">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8. </span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? </span></span><br><span class="line"><span class="string">输入yes之后输入我们项目的密码 </span></span><br><span class="line"><span class="string">nter passphrase for key &#x27;</span>/c/Users/User/.ssh/id_rsa<span class="string">&#x27;:【这里的密码也是加密串】 </span></span><br></pre></td></tr></table></figure>
 
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo18.png"></p>
@@ -535,7 +556,7 @@
 <p>我们使用浏览器访问，发现Hexo在本地已经部署好了！<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
 <h3 id="将博客部署至Github"><a href="#将博客部署至Github" class="headerlink" title="将博客部署至Github"></a>将博客部署至Github</h3><p>1.找到我们上面说的Hexo的全局配置文件<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo27.png"><br>使用Notepad++进行编辑，将deploy一项修改成如图所示：</p>
 <blockquote>
-<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
+<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
 </blockquote>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo28.png"><br><strong>注意:repo需要更改为自己的地址，获取方式如下图，将其复制type后面即可。另外，冒号后面一定要加空格，否则部署会失败</strong><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo29.png"></p>
 <p>2.更改完之后保存，我们就可以使用hexo命令发布到仓库中了：</p>
@@ -608,7 +629,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%BB%BA%E7%AB%99/">
+                                    <span class="chip bg-color">建站</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
+                                </a>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -758,6 +791,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '52448e90933727f137c1',
+        clientSecret: '6e46fec556d36347547611155813d43e5978e5eb',
+        repo: 'Gitalk',
+        owner: 'WangGang-a1',
+        admin: "WangGang-a1",
+        id: '2020-10-13T14-48-43',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
@@ -783,15 +843,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="用GitHub和Hexo建立私人博客">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="用GitHub和Hexo建立个人博客">
                         
-                        <span class="card-title">用GitHub和Hexo建立私人博客</span>
+                        <span class="card-title">用GitHub和Hexo建立个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            使用GitHub作为终端，Hexo为框架建立个人博客
                         
                     </div>
                     <div class="publish-info">
@@ -800,13 +860,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            逆鳞科技
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BB%BA%E7%AB%99/" class="post-category">
+                                    建站
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%BB%BA%E7%AB%99/">
+                        <span class="chip bg-color">建站</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -821,15 +901,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="用GitHub和Hexo建立私人博客">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="用GitHub和Hexo建立个人博客">
                         
-                        <span class="card-title">用GitHub和Hexo建立私人博客</span>
+                        <span class="card-title">用GitHub和Hexo建立个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            使用GitHub作为终端，Hexo为框架建立个人博客
                         
                     </div>
                     <div class="publish-info">
@@ -838,13 +918,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            逆鳞科技
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BB%BA%E7%AB%99/" class="post-category">
+                                    建站
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%BB%BA%E7%AB%99/">
+                        <span class="chip bg-color">建站</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1057,14 +1157,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="2161970231"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
                    preload='auto'
-                   volume='0.7'
+                   volume='0.5'
                    list-folded='true'
         >
         </meting-js>
