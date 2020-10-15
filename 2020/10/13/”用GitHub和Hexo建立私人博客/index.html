@@ -521,32 +521,39 @@
 </blockquote>
 <p>##环境搭建</p>
 <h3 id="Git配置SSH"><a href="#Git配置SSH" class="headerlink" title="Git配置SSH"></a>Git配置SSH</h3><p>1.安装完Git之后，我们需要使用SSH将本地Git项目与远程的GitHub建立联系。<br>Git安装之后会生成两个版本（Git Bash和Git Bash），我们使用的是Git Bash<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo13.png"><br>点击Git Bash，依次输入以下代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Username&quot;</span>   <span class="comment">#Your Username为你的用户名(Github)</span></span><br><span class="line">git config --global user.email <span class="string">&quot;Your Email Address&quot;</span>   <span class="comment">#Your Email Address为你的邮箱地址(Github)</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">git config --global user.name &quot;Your Username&quot;   #Your Username为你的用户名(Github)
+git config --global user.email &quot;Your Email Address&quot;   #Your Email Address为你的邮箱地址(Github)</code></pre>
 <p><strong>注意这里Your Username和Your Email Address必须正确。因为使用仓库前，要通过这两项标明自己的身份。</strong></p>
 <p>2.继续输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;Your Email Address&quot;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">cd ~/.ssh
+ssh-keygen -t rsa -C &quot;Your Email Address&quot;</code></pre>
 <p><strong>输入cd ~/.ssh后，提示：No such file or directory， 说明第一次使用Git，对结果无影响。</strong><br><strong>代码说明：</strong><br><strong>cd ~/.ssh用来检查本机的ssh密钥，ssh-keygen -t rsa -C “Your Email Address”用于生成新的SSH Key。</strong><br>执行命令之后，会出现下面内容：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</code></pre>
 <p>出现该结果直接回车（也可以自定义key名称，一般默认就好）<br>会出现输入密码<br>Enter passphrase (empty for no passphrase):【输入加密串】【加密串我们看不见，你直接输入就好，输完密码回车键确定】<br>Enter same passphrase again:【再次输入加密串】<br>如果密码输入不一致，会提示再次输入：<br>Passphrases do not match. Try again.<br>这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。<br>如果出现下图的界面，就说明key生成成功。同时从Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.能看到ssh key保存的位置。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo14.png"></p>
-<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host <span class="string">&#x27;github.com (192.30.255.113)&#x27;</span> can<span class="string">&#x27;t be established.</span></span><br><span class="line"><span class="string">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8. </span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? </span></span><br><span class="line"><span class="string">输入yes之后输入我们项目的密码 </span></span><br><span class="line"><span class="string">nter passphrase for key &#x27;</span>/c/Users/User/.ssh/id_rsa<span class="string">&#x27;:【这里的密码也是加密串】 </span></span><br></pre></td></tr></table></figure>
-
+<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
+<pre><code class="bash">The authenticity of host &#39;github.com (192.30.255.113)&#39; can&#39;t be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8. 
+Are you sure you want to continue connecting (yes/no)? 
+输入yes之后输入我们项目的密码 
+nter passphrase for key &#39;/c/Users/User/.ssh/id_rsa&#39;:【这里的密码也是加密串】 </code></pre>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo18.png"></p>
 <p>4、出现如下提示时，就是成功了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi HandsomeSuperRed! You<span class="string">&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">Hi HandsomeSuperRed! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></pre>
 <h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="Hexo部署"><a href="#Hexo部署" class="headerlink" title="Hexo部署"></a>Hexo部署</h3><p>1.安装好hexo之后，执行下面三条命令进行初始化：</p>
 <blockquote>
 <p>hexo init <folder> #初始化hexo(是你要保存博客内容的文件夹的名字。)<br>cd <folder> #进入此目录<br>npm install #安装 </folder></folder></p>
 </blockquote>
 <p>例如我想把博客保存在Hexo目录，上面三条代码就为：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init Hexo</span><br><span class="line"><span class="built_in">cd</span> Hexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">hexo init Hexo
+cd Hexo
+npm install</code></pre>
 <p>执行命令的界面所示：<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo21.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo22.png"></p>
 <p>2.三条命令执行过后，Hexo的目录就添加了很多内容，而_config.yml文件是我们用次数会比较多，它是博客的一个全局配置文件。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo23.png"></p>
 <p>3.Hexo初始化之后，我们执行下面三条命令对博客进行部署，同时开启本地服务</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy </span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">hexo generate
+hexo deploy 
+hexo server</code></pre>
 <p>效果：</p>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo24.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo25.png"><br>4.然后系统会出现如下提示：</p>
 <blockquote>
@@ -556,11 +563,12 @@
 <p>我们使用浏览器访问，发现Hexo在本地已经部署好了！<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
 <h3 id="将博客部署至Github"><a href="#将博客部署至Github" class="headerlink" title="将博客部署至Github"></a>将博客部署至Github</h3><p>1.找到我们上面说的Hexo的全局配置文件<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo27.png"><br>使用Notepad++进行编辑，将deploy一项修改成如图所示：</p>
 <blockquote>
-<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
+<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
 </blockquote>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo28.png"><br><strong>注意:repo需要更改为自己的地址，获取方式如下图，将其复制type后面即可。另外，冒号后面一定要加空格，否则部署会失败</strong><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo29.png"></p>
 <p>2.更改完之后保存，我们就可以使用hexo命令发布到仓库中了：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">hexo g
+hexo deploy</code></pre>
 <p>如果出现下面的提示恭喜你成功了！<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo31.png"></p>
 <p>3.这样就部署到 GitHub 上了，可到GitHub仓库查看是否更新。</p>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo32.png"></p>
@@ -1164,7 +1172,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                    loop='all'
                    order='random'
                    preload='auto'
-                   volume='0.5'
+                   volume='0.7'
                    list-folded='true'
         >
         </meting-js>
