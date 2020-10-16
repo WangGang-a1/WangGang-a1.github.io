@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="用GitHub和Hexo建立个人博客, 逆鳞科技的部落阁">
+    <meta name="keywords" content="用GitHub和Hexo建立完整的个人博客, 逆鳞科技的部落阁">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>用GitHub和Hexo建立个人博客 | 逆鳞科技的部落阁</title>
+    <title>用GitHub和Hexo建立完整的个人博客 | 逆鳞科技的部落阁</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">用GitHub和Hexo建立个人博客</h1>
+                    <h1 class="description center-align post-title">用GitHub和Hexo建立完整的个人博客</h1>
                 </div>
             </div>
         </div>
@@ -472,21 +472,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-15
+                    2020-10-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    9 分
                 </div>
                 
 
@@ -531,7 +531,7 @@ ssh-keygen -t rsa -C &quot;Your Email Address&quot;</code></pre>
 <pre><code class="bash">Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</code></pre>
 <p>出现该结果直接回车（也可以自定义key名称，一般默认就好）<br>会出现输入密码<br>Enter passphrase (empty for no passphrase):【输入加密串】【加密串我们看不见，你直接输入就好，输完密码回车键确定】<br>Enter same passphrase again:【再次输入加密串】<br>如果密码输入不一致，会提示再次输入：<br>Passphrases do not match. Try again.<br>这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。<br>如果出现下图的界面，就说明key生成成功。同时从Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.能看到ssh key保存的位置。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo14.png"></p>
-<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
+<h3 id="添加-SSH-Key-到-GitHub"><a href="#添加-SSH-Key-到-GitHub" class="headerlink" title="添加 SSH Key 到 GitHub"></a>添加 SSH Key 到 GitHub</h3><p>1.回到Github，按照顺序点击右上角的头像-Settings-SSH and GPG keys -New SSH key<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo15.png"><br>2.然后使用Notepad++打开本地id_rsa.pub（你的key名称）文件（ssh key文件）。如果看不到这个文件，则没有开启查看隐藏文件权限。将id_rsa.pub（SSH key文件）里面的内容全选复制粘贴到刚刚GitHub上通过New SSH key创建的key方框里，Title随便写或者直接空着不写也可以，直接点击Add SHH key就好了。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo16.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo17.png"><br>3.在GitHub添加SSH key之后，回到Git Bash界面输入ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>查看是否添加成功，如果出现下图的问题，直接输入yes同意即可！</p>
 <pre><code class="bash">The authenticity of host &#39;github.com (192.30.255.113)&#39; can&#39;t be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8. 
 Are you sure you want to continue connecting (yes/no)? 
@@ -563,7 +563,7 @@ hexo server</code></pre>
 <p>我们使用浏览器访问，发现Hexo在本地已经部署好了！<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
 <h3 id="将博客部署至Github"><a href="#将博客部署至Github" class="headerlink" title="将博客部署至Github"></a>将博客部署至Github</h3><p>1.找到我们上面说的Hexo的全局配置文件<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo27.png"><br>使用Notepad++进行编辑，将deploy一项修改成如图所示：</p>
 <blockquote>
-<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
+<p>deploy:<br>type: git<br>repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a>:LiuXiangYang-Git/LiuXiangYang-Git.github.io.git<br>branch: master </p>
 </blockquote>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo28.png"><br><strong>注意:repo需要更改为自己的地址，获取方式如下图，将其复制type后面即可。另外，冒号后面一定要加空格，否则部署会失败</strong><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo29.png"></p>
 <p>2.更改完之后保存，我们就可以使用hexo命令发布到仓库中了：</p>
@@ -573,7 +573,20 @@ hexo deploy</code></pre>
 <p>3.这样就部署到 GitHub 上了，可到GitHub仓库查看是否更新。</p>
 <p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/githexo32.png"></p>
 <p>4.成功之后，<a target="_blank" rel="noopener" href="https://xxxx.github.io/">https://XXXX.github.io/</a> (只要将一级域名更改成你的账户名即可！)  这个地址就是我们的博客域名了，它可以用来访问你的博客，当然如果你也可以将它修改成自己的域名。<br>推荐一个可以获取免费域名的网站：<a target="_blank" rel="noopener" href="https://www.freenom.com/zh/index.html?lang=zh">freenom</a></p>
-<p>5.后面教程我会详细讲解如何更换博客主题，如何新建博客等内容，持续更新……</p>
+<h2 id="博客主题"><a href="#博客主题" class="headerlink" title="博客主题"></a>博客主题</h2><blockquote>
+<p>前面我们已经搭建好了自己的个人博客界面，这里我们深入学习一下hexo框架，首先我们修改一下hexo的主题，一个优美的博客主题往往会使你收到更多的流量，当然更多的是自己看着舒心。<br>这里我使用的是<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">matery</a>主题，当然也可以从<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题中心</a>选择自己喜欢的主题，下面我就以我使用的主题来进行讲解：</p>
+</blockquote>
+<h3 id="下载第三方主题"><a href="#下载第三方主题" class="headerlink" title="下载第三方主题"></a>下载第三方主题</h3><p>首先我们进入hexo-matery主题的[GitHub仓库(<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery)%EF%BC%8C">https://github.com/blinkfox/hexo-theme-matery)，</a><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme1.png"><br>如图所示页面下滑找到Download主题，复制命令：<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme2.png"></p>
+<pre><code class="bash">git clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre>
+<p>复制完成后我们再来到我们的博客的本地目录的themes文件夹下，使用Git Bash命令行工具下载 matery主题 <em>（注意：这里我安装过来，所以在themes下又新建了一个文件夹来下载，你们应该下载themes文件夹里）</em><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme3.png"><br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme4.png"><br>恭喜！你成功下载了matery主题</p>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>上一步我们下载完了第三方主题，下面我们将hexo默认主题更换为我们下载的第三方主题<br>首先我们进入博客的本地目录，使用Notepad++打开_config.yml文件进行修改。<br><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme5.png"><br>按住Ctrl+F键搜索 <em>theme</em> 将theme: xxx 的xxx替换成你的主题名称。（例如我的主题是matery我的这里就应该是 <em>theme: matery</em>）</p>
+<blockquote>
+<p>注意：这里的冒号应该是英文的，而且：后面应该有一个空格，否则可能造成博客崩溃！！！</p>
+</blockquote>
+<p><img src="/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/theme6.png"><br>到这里我们的博客主题就已经安装成功了。</p>
+<h2 id="未完待续……"><a href="#未完待续……" class="headerlink" title="未完待续……"></a>未完待续……</h2><blockquote>
+<p>后面教程我会详细讲解如何更换博客主题，如何新建博客等内容，持续更新……</p>
+</blockquote>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一顿操作下来虽然有点儿累，但看见拥有了私人博客还是非常有成就感的，人生嘛，不就是需要折腾，实践才能增长知识，我相信在不久的将来，你会从中受益良多！</p>
 
             </div>
@@ -851,9 +864,9 @@ hexo deploy</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="用GitHub和Hexo建立个人博客">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="用GitHub和Hexo建立完整的个人博客">
                         
-                        <span class="card-title">用GitHub和Hexo建立个人博客</span>
+                        <span class="card-title">用GitHub和Hexo建立完整的个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -909,9 +922,9 @@ hexo deploy</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="用GitHub和Hexo建立个人博客">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="用GitHub和Hexo建立完整的个人博客">
                         
-                        <span class="card-title">用GitHub和Hexo建立个人博客</span>
+                        <span class="card-title">用GitHub和Hexo建立完整的个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1192,7 +1205,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2k</span>&nbsp;字
+                class="white-color">2.4k</span>&nbsp;字
             
             
             
