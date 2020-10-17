@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>逆鳞科技的部落阁</title>
+  
+  <subtitle>逆鳞科技的博客</subtitle>
+  <link href="https://blog.qltxy.cn/atom.xml" rel="self"/>
+  
+  <link href="https://blog.qltxy.cn/"/>
+  <updated>2020-10-16T08:07:48.106Z</updated>
+  <id>https://blog.qltxy.cn/</id>
+  
+  <author>
+    <name>逆鳞科技</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用GitHub和Hexo建立完整的个人博客</title>
+    <link href="https://blog.qltxy.cn/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://blog.qltxy.cn/2020/10/13/%E2%80%9D%E7%94%A8GitHub%E5%92%8CHexo%E5%BB%BA%E7%AB%8B%E7%A7%81%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-10-13T06:48:43.000Z</published>
+    <updated>2020-10-16T08:07:48.106Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简言&quot;&gt;&lt;a href=&quot;#简言&quot; class=&quot;headerlink&quot; title=&quot;简言&quot;&gt;&lt;/a&gt;简言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Hexo是一个极速、简单且强大的静态博客架构。它使用</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://blog.qltxy.cn/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="建站" scheme="https://blog.qltxy.cn/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Hexo" scheme="https://blog.qltxy.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
