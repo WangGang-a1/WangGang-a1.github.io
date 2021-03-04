@@ -6,7 +6,7 @@
   <link href="https://blog.qltxy.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.qltxy.cn/"/>
-  <updated>2020-11-23T10:18:14.406Z</updated>
+  <updated>2020-11-23T10:07:24.378Z</updated>
   <id>https://blog.qltxy.cn/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>C语言学习笔记（小白阶段）</title>
-    <link href="https://blog.qltxy.cn/2020/11/23/C-demo/"/>
-    <id>https://blog.qltxy.cn/2020/11/23/C-demo/</id>
-    <published>2020-11-23T09:50:52.000Z</published>
-    <updated>2020-11-23T10:18:14.406Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;测试ing&quot;&gt;&lt;a href=&quot;#测试ing&quot; class=&quot;headerlink&quot; title=&quot;测试ing&quot;&gt;&lt;/a&gt;测试ing&lt;/h2&gt;&lt;h3 id=&quot;hi偶啊搞活动i啊我和嗲花&quot;&gt;&lt;a href=&quot;#hi偶啊搞活动i啊我和嗲花&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="C语言" scheme="https://blog.qltxy.cn/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="C语言" scheme="https://blog.qltxy.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-    <category term="编程" scheme="https://blog.qltxy.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
   
   <entry>
     <title>用GitHub、coding双线部署Hexo个人博客</title>
