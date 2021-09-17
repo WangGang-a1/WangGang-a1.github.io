@@ -6,7 +6,7 @@
   <link href="https://blog.qltxy.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.qltxy.cn/"/>
-  <updated>2021-08-24T12:02:24.977Z</updated>
+  <updated>2021-09-17T04:06:57.714Z</updated>
   <id>https://blog.qltxy.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dual deployment Hexo</title>
+    <link href="https://blog.qltxy.cn/2021/09/17/dualdeploymenthexo/"/>
+    <id>https://blog.qltxy.cn/2021/09/17/dualdeploymenthexo/</id>
+    <published>2021-09-17T02:44:52.000Z</published>
+    <updated>2021-09-17T04:06:57.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.qltxy.cn/categories/Hexo/"/>
+    
+    
+    <category term="ssh" scheme="https://blog.qltxy.cn/tags/ssh/"/>
+    
+    <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+    <category term="git" scheme="https://blog.qltxy.cn/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建个人博客</title>
@@ -37,11 +68,11 @@
     <category term="建站" scheme="https://blog.qltxy.cn/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="建站" scheme="https://blog.qltxy.cn/tags/%E5%BB%BA%E7%AB%99/"/>
-    
     <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+    <category term="建站" scheme="https://blog.qltxy.cn/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
