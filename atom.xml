@@ -99,9 +99,9 @@
     <category term="Windows" scheme="https://blog.qltxy.cn/categories/%E6%95%99%E7%A8%8B/Windows/"/>
     
     
-    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="Windows玩机" scheme="https://blog.qltxy.cn/tags/Windows%E7%8E%A9%E6%9C%BA/"/>
+    
+    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -130,6 +130,8 @@
     <category term="网卡" scheme="https://blog.qltxy.cn/categories/%E6%95%99%E7%A8%8B/Killer/%E7%BD%91%E5%8D%A1/"/>
     
     
+    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
     <category term="AX200" scheme="https://blog.qltxy.cn/tags/AX200/"/>
     
     <category term="AX210" scheme="https://blog.qltxy.cn/tags/AX210/"/>
@@ -139,8 +141,6 @@
     <category term="Killer" scheme="https://blog.qltxy.cn/tags/Killer/"/>
     
     <category term="网卡" scheme="https://blog.qltxy.cn/tags/%E7%BD%91%E5%8D%A1/"/>
-    
-    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
