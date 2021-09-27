@@ -6,7 +6,7 @@
   <link href="https://blog.qltxy.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.qltxy.cn/"/>
-  <updated>2021-09-17T04:10:31.170Z</updated>
+  <updated>2021-09-27T04:52:57.496Z</updated>
   <id>https://blog.qltxy.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL server安装及其错误分析</title>
+    <link href="https://blog.qltxy.cn/2021/09/27/sqlserveranzhuangjiqicuowufenxi/"/>
+    <id>https://blog.qltxy.cn/2021/09/27/sqlserveranzhuangjiqicuowufenxi/</id>
+    <published>2021-09-27T02:53:26.000Z</published>
+    <updated>2021-09-27T04:52:57.496Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建站" scheme="https://blog.qltxy.cn/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="SQL" scheme="https://blog.qltxy.cn/tags/SQL/"/>
+    
+    <category term="安装教程" scheme="https://blog.qltxy.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Dual deployment Hexo</title>
@@ -99,9 +126,9 @@
     <category term="Windows" scheme="https://blog.qltxy.cn/categories/%E6%95%99%E7%A8%8B/Windows/"/>
     
     
-    <category term="Windows玩机" scheme="https://blog.qltxy.cn/tags/Windows%E7%8E%A9%E6%9C%BA/"/>
-    
     <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Windows玩机" scheme="https://blog.qltxy.cn/tags/Windows%E7%8E%A9%E6%9C%BA/"/>
     
   </entry>
   
@@ -130,8 +157,6 @@
     <category term="网卡" scheme="https://blog.qltxy.cn/categories/%E6%95%99%E7%A8%8B/Killer/%E7%BD%91%E5%8D%A1/"/>
     
     
-    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="AX200" scheme="https://blog.qltxy.cn/tags/AX200/"/>
     
     <category term="AX210" scheme="https://blog.qltxy.cn/tags/AX210/"/>
@@ -141,6 +166,8 @@
     <category term="Killer" scheme="https://blog.qltxy.cn/tags/Killer/"/>
     
     <category term="网卡" scheme="https://blog.qltxy.cn/tags/%E7%BD%91%E5%8D%A1/"/>
+    
+    <category term="教程" scheme="https://blog.qltxy.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
