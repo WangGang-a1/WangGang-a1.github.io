@@ -549,14 +549,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    854
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -581,14 +581,20 @@
 <blockquote>
 <p>对于报错：一般软件报错时不应该第一时间去删除什么而是理性分析，是不是电脑环境没有安装完全，是不是软件服务没有开启，是不是权重不对，一昧的重装不仅不会修复错误，还可能导致bug更多甚至电脑环境紊乱（来自MySQL经验）</p>
 </blockquote>
+<h2 id="我的系统及其环境"><a href="#我的系统及其环境" class="headerlink" title="我的系统及其环境"></a>我的系统及其环境</h2><p><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/MyPC.jpg"><br>系统：Win11 22000.100<br>账户：双账户（开发者账户隐藏）<br>cpu：i5-9300h<br>    32g内存<br>    4tb存储</p>
 <h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL1.jpg" alt="完整安装效果"></p>
 <h2 id="安装SQL-Server"><a href="#安装SQL-Server" class="headerlink" title="安装SQL Server"></a>安装SQL Server</h2><p>我们前往微软官网下载<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/sql-server/sql-server-downloads">SQL serverExpress 版本</a> 也可以点击<a target="_blank" rel="noopener" href="https://download.microsoft.com/download/7/f/8/7f8a9c43-8c8a-4f7c-9f92-83c18d96b681/SQL2019-SSEI-Expr.exe">直链</a> 直接下载<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL2.jpg" alt="下载Express 版本"><br>使用Win+E键打开文件资源管理器找到下载目录，双击打开SQL2019-SSEI-Expr.exe<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL3.jpg" alt="打开安装包"><br>选择自定义安装<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL4.jpg" alt="自定义安装"><br>目录改为D盘，尽量不要安装在C盘（C盘满了的话系统不稳定卡顿）<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL5.jpg" alt="更改安装路径"><br>等待下载完成<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL6.jpg" alt="安装包下载中"><br>点击全新SQL Server独立安装<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL7.jpg" alt="点第一个"><br>点击后进入一个安装页面，然后等待各种检测<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL8.jpg" alt="接受许可下一步"><br>然后一路下一步就可以，到功能选择时保持默认，因为每个人每个厂商电脑不同，出厂安装的环境也不同，如果都取消勾选可能因为没有必备环境而安装失败，这里目录不用改，环境默认安装C盘。</p>
 <blockquote>
 <p>ps：有些书籍和老师可能说不让勾选，但是新版本python、java和R文件都是必须项，必要的环境</p>
 </blockquote>
 <p><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL9.jpg" alt="默认即可"><br>实例配置默认和自定义都可，接下来就是一路默认，到数据库引擎配置时选择混合模式，密码自定；<br><em><strong>注意：多用户则选择管理员账户进行授权！！！</strong></em><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL10.jpg" alt="密码输入"></p>
-<p>然后就是接受各种条例，再点击下一步（这里是安装数据库引擎的环境），然后慢慢等待安装成功~~<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL11.jpg" alt="等待"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL12.jpg" alt="安装完成"><br>到这里我们SQL Server已经安装完成了，我们去下载<a target="_blank" rel="noopener" href="https://download.microsoft.com/download/1/e/c/1ec92162-142d-4fed-a575-6e2195b65a66/SSMS-Setup-CHS.exe">SSMS管理工具</a><br>下载完成后去下载路径打开安装包，这里最好更改一下安装路径不要安装再C盘，更改完后点击安装即可<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL13.jpg" alt="更改路径"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL13.jpg" alt="安装中"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL13.jpg" alt="安装完成"><br>安装完成后重启即可，到这里安装工作就完成了！！！</p>
-<h2 id="错误分析及处理方法"><a href="#错误分析及处理方法" class="headerlink" title="错误分析及处理方法"></a>错误分析及处理方法</h2>
+<p>然后就是接受各种条例，再点击下一步（这里是安装数据库引擎的环境），然后慢慢等待安装成功~~<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL11.jpg" alt="等待"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL12.jpg" alt="安装完成"><br>到这里我们SQL Server已经安装完成了，我们去下载<a target="_blank" rel="noopener" href="https://download.microsoft.com/download/1/e/c/1ec92162-142d-4fed-a575-6e2195b65a66/SSMS-Setup-CHS.exe">SSMS管理工具</a><br>下载完成后去下载路径打开安装包，这里最好更改一下安装路径不要安装再C盘，更改完后点击安装即可<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL13.jpg" alt="更改路径"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL14.jpg" alt="安装中"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL15.jpg" alt="安装完成"><br>安装完成后重启即可，到这里安装工作就完成了！！！</p>
+<h2 id="错误分析及处理方法"><a href="#错误分析及处理方法" class="headerlink" title="错误分析及处理方法"></a>错误分析及处理方法</h2><blockquote>
+<p>为了这个错误我把系统初始化了，嘤嘤嘤ing<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL16.jpg" alt="无法连接服务器错误"><br>出现这种情况可能性很多我们首先查看是不是SQL服务有没有开启的。</p>
+</blockquote>
+<h3 id="启用SQL服务"><a href="#启用SQL服务" class="headerlink" title="启用SQL服务"></a>启用SQL服务</h3><p>win右键点击运行，在运行中输入services.msc，查看SQL有关服务是否全部开启。<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL17.jpg" alt="打开服务管理"><br>查看你的SQL服务有没有没有开启的，如果有把他启用<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL18.jpg" alt="启用SQL服务"><br>这一步完成之后关闭服务列表，打开SQL管理看是否可以登录，如果可以登录则不需要接下来这一步了</p>
+<h3 id="设置SQL配置管理器"><a href="#设置SQL配置管理器" class="headerlink" title="设置SQL配置管理器"></a>设置SQL配置管理器</h3><p>点击win找到所有程序，找到SQL Server 2019 文件夹，打开文件夹里面的“SQL Server 2019 配置管理器”程序，然后点击我图中标示的位置双击<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL19.jpg" alt="更改ICP/IP"><br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL20.jpg" alt="点击IP"><br>下拉找到IPAII修改他的TCP端口为‘1433/8099‘，修改完成后保存<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL21.jpg" alt="修改TCP端口"><br>按照图例找到SQL Server右键重启，重启完成后错误就解决了！！<br>按照以上操作后会发现我们的SQL可以进去了，没有什么报错了<br><img src="/2021/09/27/sqlserveranzhuangjiqicuowufenxi/SQL22.jpg" alt="完美安装"></p>
+
             </div>
             <hr/>
 
@@ -1206,7 +1212,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.1k</span>&nbsp;字
             
             
             
