@@ -569,7 +569,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-17
+                    2022-09-11
                 </div>
                 
 
@@ -605,12 +605,13 @@
 <h2 id="正式开始"><a href="#正式开始" class="headerlink" title="正式开始"></a>正式开始</h2><h3 id="建立GitHub仓库-账号"><a href="#建立GitHub仓库-账号" class="headerlink" title="建立GitHub仓库/账号"></a>建立GitHub仓库/账号</h3><blockquote>
 <p>如果已经有账号或者创建好仓库跳过这一阶段</p>
 </blockquote>
-<p>####第一步：注册####<br>进入<a href="https://blog.qltxy.cn/">GitHub官网</a> 点击sign up进入注册页面输入邮箱，点击继续然后输入密码，GitHub会给你的邮箱发一封确认邮件，确认之后我们的GitHub账号就注册好了。<br><img src="/2021/09/17/dualdeploymenthexo/Hexo1.jpg" alt="注册页面"><br><img src="/2021/09/17/dualdeploymenthexo/Hexo2.jpg" alt="输入邮箱"><br>####第二步：建立仓库####<br>登录<a target="_blank" rel="noopener" href="https://github.com/login">GitHub</a> 依次点击右上角头像-Your repositories-New进入新建仓库页面<br><img src="/2021/09/17/dualdeploymenthexo/Hexo3.jpg"><br><img src="/2021/09/17/dualdeploymenthexo/Hexo4.jpg"></p>
+<h4 id="第一步：注册"><a href="#第一步：注册" class="headerlink" title="第一步：注册"></a>第一步：注册</h4><p>进入<a href="https://blog.qltxy.cn/">GitHub官网</a> 点击sign up进入注册页面输入邮箱，点击继续然后输入密码，GitHub会给你的邮箱发一封确认邮件，确认之后我们的GitHub账号就注册好了。<br><img src="/2021/09/17/dualdeploymenthexo/Hexo1.jpg" alt="注册页面"><br><img src="/2021/09/17/dualdeploymenthexo/Hexo2.jpg" alt="输入邮箱"></p>
+<h4 id="第二步：建立仓库"><a href="#第二步：建立仓库" class="headerlink" title="第二步：建立仓库"></a>第二步：建立仓库</h4><p>登录<a target="_blank" rel="noopener" href="https://github.com/login">GitHub</a> 依次点击右上角头像-Your repositories-New进入新建仓库页面<br><img src="/2021/09/17/dualdeploymenthexo/Hexo3.jpg"><br><img src="/2021/09/17/dualdeploymenthexo/Hexo4.jpg"></p>
 <blockquote>
 <p>仓库名称建议填写与用户名一样的名称（也可以不填没有特殊要求）</p>
 </blockquote>
 <p>都填写好了之后点击Create repository,到这里一个GitHub仓库就建好了<br><img src="/2021/09/17/dualdeploymenthexo/Hexo5.jpg"></p>
-<p>###建立ssh密钥<br>打开电脑终端，也可以使用<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> 我个人使用的就是Git软件<br>使用<em><strong>cd ~/.ssh</strong></em>切换工作目录，然后使用如下命令生成新的密钥：</p>
+<h3 id="建立ssh密钥"><a href="#建立ssh密钥" class="headerlink" title="建立ssh密钥"></a>建立ssh密钥</h3><p>打开电脑终端，也可以使用<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> 我个人使用的就是Git软件<br>使用<em><strong>cd ~/.ssh</strong></em>切换工作目录，然后使用如下命令生成新的密钥：</p>
 <pre><code class="bash">ssh-keygen -t rsa -C &quot;Your Email Address&quot;
 </code></pre>
 <p><em><strong>Your Email Address为你的邮箱地址</strong></em></p>
@@ -621,9 +622,8 @@ Enter file in which to save the key (/c/Users/29453/.ssh/id_rsa):
 <pre><code class="bash">Enter passphrase (empty for no passphrase):
 </code></pre>
 <p>这里给你的密钥设置个密码，也可以不设置，一路回车就建立完成了~（设置了密码会再次验证一次）</p>
-<p>###添加 SSH key<br>打开<strong>C:\Users\用户名.ssh</strong>这个目录找到你新建立的公钥，用n++打开<strong>（密钥名称）.pub</strong>后缀的这个文件并复制全部内容，<br>登陆github 账号，在 Settings —&gt; SSH and GPG keys 中，点击 “new SSH key”，把公钥的内容分别添加到相应的账号中。<br><img src="/2021/09/17/dualdeploymenthexo/Hexo6.jpg"></p>
-<p>###配置ssh双部署</p>
-<h4 id="修改ssh配置实现双部署"><a href="#修改ssh配置实现双部署" class="headerlink" title="修改ssh配置实现双部署"></a>修改ssh配置实现双部署</h4><p>在 ~/.ssh目录下新建 config 文件，令不同 Host 实际映射到同一 HostName，但密钥文件不同。</p>
+<h3 id="添加-SSH-key"><a href="#添加-SSH-key" class="headerlink" title="添加 SSH key"></a>添加 SSH key</h3><p>打开<strong>C:\Users\用户名.ssh</strong>这个目录找到你新建立的公钥，用n++打开<strong>（密钥名称）.pub</strong>后缀的这个文件并复制全部内容，<br>登陆github 账号，在 Settings —&gt; SSH and GPG keys 中，点击 “new SSH key”，把公钥的内容分别添加到相应的账号中。<br><img src="/2021/09/17/dualdeploymenthexo/Hexo6.jpg"></p>
+<h3 id="配置ssh双部署"><a href="#配置ssh双部署" class="headerlink" title="配置ssh双部署"></a>配置ssh双部署</h3><h4 id="修改ssh配置实现双部署"><a href="#修改ssh配置实现双部署" class="headerlink" title="修改ssh配置实现双部署"></a>修改ssh配置实现双部署</h4><p>在 ~/.ssh目录下新建 config 文件，令不同 Host 实际映射到同一 HostName，但密钥文件不同。</p>
 <pre><code class="bash">touch config
 </code></pre>
 <p>打开confing文件加上以下内容</p>
@@ -642,7 +642,7 @@ User two              #User后面的可以自己填写
 IdentityFile ~/.ssh/id_rsa_two
 </code></pre>
 <p>修改完后保存退出！记得保存否则不生效</p>
-<p>####修改Hexo的git<br>进入你Hexo的根目录打开.deploy_git.git文件夹，再此文件夹内运行Git，并运行以下代码：</p>
+<h4 id="修改Hexo的git"><a href="#修改Hexo的git" class="headerlink" title="修改Hexo的git"></a>修改Hexo的git</h4><p>进入你Hexo的根目录打开.deploy_git.git文件夹，再此文件夹内运行Git，并运行以下代码：</p>
 <pre><code class="bash">git config  --unset user.name
 git config  --unset user.email
 git config --global --unset user.name
@@ -656,7 +656,7 @@ git config --global --unset user.email
 git config user.email &quot;Your Email Address&quot;
 </code></pre>
 <p><strong>Your Username，Your Email Address分别为你的GitHub名称和你注册GitHub时的邮箱。因为使用仓库前，要通过这两项标明自己的身份，所以必须正确！！！</strong></p>
-<p>最后一步，也是最重要的一步，打开Hexo的_config.yml文件在<a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>的github和@中间加上你在Host前面起的名称<br><img src="/2021/09/17/dualdeploymenthexo/Hexo7.jpg"><br>例如我的：ssh配置文件内容是</p>
+<p>最后一步，也是最重要的一步，打开Hexo的_config.yml文件在<a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a>的github和@中间加上你在Host前面起的名称<br><img src="/2021/09/17/dualdeploymenthexo/Hexo7.jpg"><br>例如我的：ssh配置文件内容是</p>
 <pre><code class="bash"># one (first account)
 Host blog.github.com
 HostName github.com
@@ -671,7 +671,7 @@ PreferredAuthentications publickey
 User nl-anonymous
 IdentityFile ~/.ssh/wenan
 </code></pre>
-<p>那么我就应该改成<a href="mailto:&#103;&#105;&#116;&#64;&#98;&#x6c;&#x6f;&#x67;&#x2e;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#64;&#98;&#x6c;&#x6f;&#x67;&#x2e;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a>或者是<a href="mailto:&#103;&#x69;&#116;&#64;&#x77;&#x65;&#110;&#x61;&#x6e;&#x2e;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x77;&#x65;&#110;&#x61;&#x6e;&#x2e;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>那么我就应该改成<a href="mailto:&#x67;&#105;&#x74;&#x40;&#x62;&#x6c;&#x6f;&#103;&#46;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#x62;&#x6c;&#x6f;&#103;&#46;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>或者是<a href="mailto:&#103;&#105;&#116;&#64;&#x77;&#101;&#110;&#97;&#110;&#46;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x77;&#101;&#110;&#97;&#110;&#46;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;</a></p>
 <blockquote>
 <p>到这里我的教程就圆满结束了，分别运行一下hexo d试试吧，会有神奇的效果哦~</p>
 </blockquote>
