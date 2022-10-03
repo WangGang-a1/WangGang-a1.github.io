@@ -6,7 +6,7 @@
   <link href="https://blog.qltxy.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.qltxy.cn/"/>
-  <updated>2021-09-27T06:12:24.500Z</updated>
+  <updated>2022-09-12T06:03:57.192Z</updated>
   <id>https://blog.qltxy.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Acer A715黑苹果配置</title>
+    <link href="https://blog.qltxy.cn/2022/09/12/acera715heipingguopeizhi/"/>
+    <id>https://blog.qltxy.cn/2022/09/12/acera715heipingguopeizhi/</id>
+    <published>2022-09-12T05:43:04.000Z</published>
+    <updated>2022-09-12T06:03:57.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="黑苹果" scheme="https://blog.qltxy.cn/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+    <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+    <category term="黑苹果" scheme="https://blog.qltxy.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL server安装及其错误分析</title>
@@ -64,11 +91,11 @@
     <category term="Hexo" scheme="https://blog.qltxy.cn/categories/Hexo/"/>
     
     
+    <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
     <category term="ssh" scheme="https://blog.qltxy.cn/tags/ssh/"/>
     
     <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
     
     <category term="git" scheme="https://blog.qltxy.cn/tags/git/"/>
     
@@ -95,9 +122,9 @@
     <category term="建站" scheme="https://blog.qltxy.cn/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="经验" scheme="https://blog.qltxy.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+    <category term="博客" scheme="https://blog.qltxy.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="建站" scheme="https://blog.qltxy.cn/tags/%E5%BB%BA%E7%AB%99/"/>
     
